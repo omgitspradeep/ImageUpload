@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+
+.dz{
+    border: dashed;
+    border-color: cornsilk ;
+    border-radius: 10px;
+}
+
+.dz:hover{
+    background-color: darkcyan;
+}

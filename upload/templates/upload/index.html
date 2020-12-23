@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+    <form action="upload/" method="POST" class="dropzone dz" id="my-dz">{% csrf_token %}
+        <div class="fallback">
+            <input name="file" type="file" multiple />
+        </div>
+    </form>
+
+    {% if images%}
+        <ol>
+        {%for image in images %}
+
+            <li><a href="{{ image.get_absolute_url }}">Image {{image.id}}</a></li>
+            <!--  OR <li><a href="{% url 'disp' image.id %}">Image {{image.id}}</a></li> -->
+        {%endfor%}
+        </ol>
+    {%endif%}
+{% endblock content %}

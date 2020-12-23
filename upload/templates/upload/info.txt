@@ -1,0 +1,4 @@
+This program was created to understand the concept of 
+-> photo upload using Drag 'n Drop 
+-> Store that photo in Database
+-> Display that photo in template
